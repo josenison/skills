@@ -70,6 +70,8 @@ Key `[ApiController]` behaviors:
 - Apply authorization at the endpoint or controller boundary, not only inside service methods
 - Use `ProblemDetails` for errors instead of ad hoc JSON shapes
 
+<!-- Personal note: I find it helpful to also log the ProblemDetails instance at Warning level before returning it, so errors are traceable in the logs without extra middleware. -->
+
 ## Browser-Facing Notes
 
 - Be careful with cookie-authenticated API endpoints and CORS
@@ -78,4 +80,4 @@ Key `[ApiController]` behaviors:
 
 ## Native AOT
 
-Use `dotnet new webapiaot` only when native AOT is an explicit deployment requirement. Treat it as a constraint that affects library choice, reflection, JSON patterns, and compatibility.
+Use `dotnet new webapiaot` only when native AOT is an explicit deployment requirement. Treat it as a constraint that affects library choice, reflec
