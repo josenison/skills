@@ -37,6 +37,13 @@ After installing a skill, restart Codex to pick up new skills.
 
 > **Personal note:** I've found it helpful to keep a local list of installed skills in a `my-skills.txt` file at the repo root so I can quickly remember what I've set up across machines.
 
+## Skills I'm using
+
+A quick reference of skills I've personally found useful:
+
+- `gh-address-comments` — great for keeping PR review cycles short
+- `create-plan` (experimental) — helps break down larger tasks before diving in
+
 ## License
 
 The license of an individual skill can be found directly inside the skill's directory inside the `LICENSE.txt` file.
