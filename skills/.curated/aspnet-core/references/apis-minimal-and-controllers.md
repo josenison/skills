@@ -76,6 +76,7 @@ Key `[ApiController]` behaviors:
 
 ## Browser-Facing Notes
 
-- Be careful with cookie-authenticated API endpoints and CORS
-- For browser-based form or file upload endpoints, account for antiforgery requirements
-- In ASP.NET Core 10, known API endpoints no longer use cookie-login redirects by default; rely on API-appropriate unauthorized responses
+- Be cautious with CORS configuration; prefer explicit origin allowlists over `AllowAnyOrigin` in production.
+- Set `SameSite` and `Secure` cookie attributes explicitly when the API sets cookies for browser clients.
+
+<!-- Personal note: I've been bitten by overly permissive CORS in staging environments leaking into prod configs. Worth a checklist item before any deployment. -->
