@@ -36,6 +36,8 @@ Minimal API reminders:
 
 On .NET 10, Minimal APIs support built-in validation with `AddValidation()`. Use that instead of inventing parallel validation infrastructure when the target framework supports it.
 
+<!-- Personal note: When organizing route groups, I like to put each feature's group definition in its own static class with a MapXyzEndpoints extension method on IEndpointRouteBuilder. Keeps Program.cs clean and makes it easy to find all routes for a given feature. -->
+
 ## Controller API Guidance
 
 Prefer controllers when the API needs:
@@ -76,8 +78,4 @@ Key `[ApiController]` behaviors:
 
 - Be careful with cookie-authenticated API endpoints and CORS
 - For browser-based form or file upload endpoints, account for antiforgery requirements
-- In ASP.NET Core 10, known API endpoints no longer use cookie-login redirects by default; rely on API-appropriate unauthorized responses instead
-
-## Native AOT
-
-Use `dotnet new webapiaot` only when native AOT is an explicit deployment requirement. Treat it as a constraint that affects library choice, reflec
+- In ASP.NET Core 10, known API endpoints no longer use cookie-login redirects by default; rely on API-appropriate unauthorized responses
