@@ -10,6 +10,7 @@ Use this file as the routing table for the rest of the skill.
 - Authentication, authorization, or secrets: `security-and-identity.md`
 - Realtime, streaming, or background processing: `realtime-grpc-and-background-work.md`
 - Upgrade or migration work: `versioning-and-upgrades.md`
+- Unsure which model fits: `stack-selection.md` first, then follow the new app path
 
 ## Primary References
 
@@ -39,3 +40,4 @@ Use this file as the routing table for the rest of the skill.
 - Prefer the framework's built-in abstractions first.
 - Check `versioning-and-upgrades.md` before introducing APIs that might not exist in the repository's target framework.
 - Personal note: I mostly work with Minimal APIs and Blazor SSR — start with those two references for any new personal projects.
+- Personal note: When prototyping, skip `testing-performance-and-operations.md` on the first pass and circle back once the feature shape is stable.
