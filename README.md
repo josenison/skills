@@ -43,6 +43,7 @@ A quick reference of skills I've personally found useful:
 
 - `gh-address-comments` — great for keeping PR review cycles short
 - `create-plan` (experimental) — helps break down larger tasks before diving in
+- `write-tests` (experimental) — useful for generating a first pass of unit tests on new modules
 
 ## License
 
